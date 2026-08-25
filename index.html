@@ -89,7 +89,6 @@ title: Home
       </div>
       {% endif %}
       <div class="project-row-content">
-        {% if project.tier %}<span class="tier-badge tier-{{ project.tier }}">{{ project.tier }}</span>{% endif %}
         <h3>{{ project.title }}</h3>
         {% if project.subtitle %}<p class="project-row-subtitle">{{ project.subtitle }}</p>{% endif %}
         {% if project.excerpt %}<p class="project-row-excerpt">{{ project.excerpt | strip_html }}</p>{% endif %}

@@ -284,20 +284,6 @@ section h2 {
 
 a { color: var(--accent); }
 
-.tier-badge {
-  display: inline-block;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  margin-bottom: 1rem;
-}
-.tier-badge.tier-flagship { color: #92400e; background: rgba(180, 83, 9, 0.12); }
-.tier-badge.tier-analysis { color: #075985; background: rgba(3, 105, 161, 0.1); }
-.tier-badge.tier-engineering { color: #6d28d9; background: rgba(124, 58, 237, 0.1); }
-
 .back-link {
   display: inline-block;
   margin-top: 2rem;

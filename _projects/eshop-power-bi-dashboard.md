@@ -1,7 +1,6 @@
 ---
 title: E-Shop BI Dashboard
 subtitle: A 4-page Power BI dashboard for a simulated e-commerce business
-tier: analysis
 year: 2026
 stat: "4-page dashboard, 2 fact tables + 4 dimensions, tracking revenue, units sold, and customer engagement"
 order: 2

@@ -1,7 +1,6 @@
 ---
 title: Social Network Database Modeling & SQL Analysis
 subtitle: Normalizing ~100,000 tweets into a 3NF schema and mining behavior with advanced SQL
-tier: engineering
 year: 2025
 stat: "86% of replies stayed in the same language, vs. 48% expected by chance"
 order: 3

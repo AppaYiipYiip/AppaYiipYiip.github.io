@@ -1,7 +1,6 @@
 ---
 title: Large-Scale Communication Network Analysis
 subtitle: Reconstructing an organization's email network from 500,000+ messages with Apache Spark
-tier: engineering
 year: 2025
 stat: "20% of employees accounted for 90%+ of all communication"
 order: 4

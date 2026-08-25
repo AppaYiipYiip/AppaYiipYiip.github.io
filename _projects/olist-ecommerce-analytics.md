@@ -1,7 +1,6 @@
 ---
 title: Olist E-Commerce Analytics
 subtitle: A 10-page Power BI report analyzing $16M+ in real Brazilian e-commerce orders, from data model to AI-driven insights
-tier: flagship
 year: 2026
 stat: "$16.01M in revenue across ~99K orders, with a 3.12% repeat customer rate as the central open question"
 order: 1
