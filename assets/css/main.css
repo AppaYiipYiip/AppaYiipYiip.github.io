@@ -328,6 +328,16 @@ a { color: var(--accent); }
   margin: 1.5rem 0;
 }
 
+.project-body img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 12px 24px rgba(16, 24, 40, 0.1);
+}
+
 .repo-link {
   display: inline-block;
   margin-top: 1.5rem;
