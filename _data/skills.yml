@@ -1,0 +1,31 @@
+# Grouped skills list. Add/remove items freely; the About section renders
+# whatever groups exist here without any template changes.
+- group: Business Intelligence
+  items:
+    - Power BI (Desktop, Service)
+    - DAX
+    - Power Query (M)
+    - Data modeling (star schema)
+    - Dashboard design
+
+- group: Databases & SQL
+  items:
+    - SQL
+    - Relational modeling
+    - Normalization (3NF)
+    - CTEs & window functions
+
+- group: Programming
+  items:
+    - Python (pandas, NumPy)
+
+- group: Tools
+  items:
+    - Advanced Excel
+    - Git
+
+- group: Languages
+  items:
+    - Arabic (native)
+    - French (fluent)
+    - English (fluent)

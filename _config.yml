@@ -1,0 +1,49 @@
+title: Marouane Omansour
+headline: Data Analyst | Data Engineering | Business Intelligence (Power BI)
+hero_tagline: Data Analyst & Data Engineer
+hero_subtagline: Business Intelligence (Power BI)
+description: "Data Analyst and Data Engineer: data modeling, advanced SQL, Power BI dashboards, and large-scale data pipelines."
+location: Mohammedia, Morocco
+profile: >
+  MSc graduate (Distinction) and recipient of the Best MSc Student Award,
+  Royal Holloway, University of London. Data Analyst and Data Engineer:
+  structures ambiguous problems, tests hypotheses, and turns data into
+  clear, actionable recommendations, from Power BI dashboards and DAX
+  measures to large-scale pipelines processing hundreds of thousands of
+  records with SQL, Python, and Apache Spark. Proven leadership and
+  collaboration experience: represented 100+ postgraduate students as a
+  faculty liaison, communicating recommendations to senior academic staff.
+  Comfortable working across diverse teams under ambiguity. Available
+  immediately.
+url: ""
+baseurl: ""
+
+author:
+  name: Marouane Omansour
+  email: marwanomansour04@gmail.com
+  linkedin: https://www.linkedin.com/in/marouane-omansour
+  github: https://github.com/AppaYiipYiip
+
+resume: /assets/resume/marouane-omansour-resume.pdf
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

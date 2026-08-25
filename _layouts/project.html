@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <a class="back-link" href="{{ '/' | relative_url }}#work">&larr; Back</a>
+
+  <div class="project-detail-header">
+    {% if page.tier %}<span class="tier-badge tier-{{ page.tier }}">{{ page.tier }}</span>{% endif %}
+    {% if page.year %}<span class="project-year">{{ page.year }}</span>{% endif %}
+  </div>
+
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+
+  {% if page.stat %}
+  <p class="project-stat">{{ page.stat }}</p>
+  {% endif %}
+
+  {% if page.source_logo %}
+  <div class="project-source">
+    <img src="{{ page.source_logo | relative_url }}" alt="{{ page.source_name }}">
+    <span>{{ page.source_name }}</span>
+  </div>
+  {% endif %}
+
+  {% if page.image %}
+  <div class="project-hero">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="project-body">
+    {{ content }}
+  </div>
+
+  {% if page.repo %}
+  <p><a class="repo-link" href="{{ page.repo }}" target="_blank" rel="noopener">View code on GitHub &rarr;</a></p>
+  {% endif %}
+</article>

@@ -1,0 +1,9 @@
+# Add new entries any time. The Certifications section on the home page
+# only appears when this list is non-empty, and needs no template changes.
+- name: Google Project Management Professional Certificate
+  year: 2025
+  status: completed
+
+- name: AWS Cloud Practitioner
+  year: 2026
+  status: in progress

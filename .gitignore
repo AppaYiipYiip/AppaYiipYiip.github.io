@@ -1,0 +1,12 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+Gemfile.lock
+
+# Original, uncompressed image uploads — optimized versions
+# (profile.jpg, royal-holloway.jpg) are what actually gets used/committed.
+assets/images/marouane pro.png
+assets/images/rhul-west.webp

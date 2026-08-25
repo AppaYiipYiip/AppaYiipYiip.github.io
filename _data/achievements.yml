@@ -1,0 +1,20 @@
+# Add new entries any time. The Experience section on the home page and
+# the Resume page both render this list, and need no template changes.
+- title: Academic Representative
+  org: Royal Holloway, University of London
+  period: Sep 2024 – Sep 2025
+  detail: >
+    Acted as liaison between faculty and 100+ MSc students, ensuring
+    effective two-way communication of academic concerns and initiatives.
+    Represented student feedback in Student-Staff Action Meetings (SSAM),
+    collaborating with department heads and fellow representatives to
+    implement improvements to the academic experience.
+
+- title: Community Fridge Volunteer
+  org: St John The Baptist Church, London
+  period: Sep 2024 – Sep 2025
+  detail: >
+    Supported a nonprofit initiative reducing food waste by collecting
+    surplus food from supermarkets, bakeries, and local businesses for
+    redistribution to families in need. Coordinated logistics and
+    distributed roughly 250kg of food weekly alongside a volunteer team.

@@ -1,0 +1,21 @@
+- degree: MSc Data Science and Analytics (Distinction)
+  school: Royal Holloway, University of London, UK
+  honor: Best MSc Student Prize, Computer Science Department
+  detail: >
+    Thesis: a conformal prediction framework for hierarchical multi-class
+    classification, with statistical coverage guarantees validated over
+    225,000+ image classifications.
+  modules:
+    - Data Analytics
+    - Databases
+    - Natural Language Processing
+    - Data Visualisation and Exploratory Analysis
+    - Large-Scale Data Storage and Processing
+    - Principles of Computation and Programming
+    - Ethical Issues in Advanced Computing and Artificial Intelligence
+
+- degree: BSc Software Engineering (First-Class Honours)
+  school: Cardiff Metropolitan University, UK
+  detail: >
+    Coursework: Agile Development, Software Development Lifecycle,
+    Database Systems.

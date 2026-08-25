@@ -1,0 +1,89 @@
+---
+layout: default
+title: Resume
+permalink: /resume/
+---
+
+<article class="resume">
+  <a class="back-link" href="{{ '/' | relative_url }}">&larr; Back</a>
+
+  <header class="resume-header">
+    <div>
+      <h1>{{ site.title }}</h1>
+      <p class="headline">{{ site.headline }}</p>
+      <p class="tagline">{{ site.location }}</p>
+    </div>
+    <a class="resume-pdf-link" href="{{ site.resume | relative_url }}" target="_blank" rel="noopener">Download PDF</a>
+  </header>
+
+  <p class="resume-contact">
+    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+    {% if site.author.linkedin %}<a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+    {% if site.author.github %}<a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+  </p>
+
+  <section class="resume-section">
+    <p>{{ site.profile }}</p>
+  </section>
+
+  <section class="resume-section">
+    <h2 class="resume-heading">Education</h2>
+    {% for edu in site.data.education %}
+    <div class="education-item">
+      <h3>{{ edu.degree }}</h3>
+      <p class="edu-school">{{ edu.school }}{% if edu.honor %} &middot; {{ edu.honor }}{% endif %}</p>
+      {% if edu.detail %}<p class="edu-detail">{{ edu.detail }}</p>{% endif %}
+      {% if edu.modules %}<p class="edu-detail"><strong>Key modules:</strong> {{ edu.modules | join: ", " }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="resume-section">
+    <h2 class="resume-heading">Skills</h2>
+    <div class="skills-grid">
+      {% for group in site.data.skills %}
+      <div class="skills-group">
+        <h4>{{ group.group }}</h4>
+        <p>{{ group.items | join: " · " }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <h2 class="resume-heading">Experience</h2>
+    {% for item in site.data.achievements %}
+    <div class="achievement-item">
+      <h3>{{ item.title }}</h3>
+      <p class="achievement-meta">{{ item.org }} &middot; {{ item.period }}</p>
+      {% if item.detail %}<p class="achievement-detail">{{ item.detail }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="resume-section">
+    <h2 class="resume-heading">Technical Projects</h2>
+    {% assign projects = site.projects | sort: "order" %}
+    {% for project in projects %}
+    <div class="resume-project-item">
+      <div class="resume-project-title">
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        {% if project.year %}<span class="project-year">{{ project.year }}</span>{% endif %}
+      </div>
+      {% if project.subtitle %}<p class="edu-detail">{{ project.subtitle }}</p>{% endif %}
+      {% if project.stat %}<p class="card-stat">{{ project.stat }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  {% if site.data.certifications.size > 0 %}
+  <section class="resume-section">
+    <h2 class="resume-heading">Certifications</h2>
+    <ul class="certifications-list">
+      {% for cert in site.data.certifications %}
+      <li><span>{{ cert.name }}</span><span class="cert-year">{{ cert.year }}{% if cert.status == "in progress" %} (in progress){% endif %}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>
