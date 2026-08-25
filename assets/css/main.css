@@ -433,24 +433,31 @@ a { color: var(--accent); }
 
 .about-layout {
   display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+  gap: 3rem;
+  align-items: center;
   flex-wrap: wrap;
 }
 
+.about-text {
+  flex: 1 1 380px;
+  min-width: 0;
+}
+.about-text h2 { margin-top: 0; }
+.about-text p { font-size: 1.05rem; }
+
 .about-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  flex: 1 1 280px;
+  max-width: 340px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
   object-fit: cover;
-  flex-shrink: 0;
   border: 1px solid var(--border);
+  box-shadow: 0 12px 24px rgba(16, 24, 40, 0.1);
 }
 
-.about-text { flex: 1; min-width: 260px; }
-
 .about-campus {
-  margin: 2.5rem 0 0;
+  margin: 3rem 0 0;
 }
 .about-campus img {
   width: 100%;
@@ -461,6 +468,43 @@ a { color: var(--accent); }
   margin-top: 0.6rem;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+}
+
+.tech-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(3, 105, 161, 0.1);
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+.tech-icon svg { width: 24px; height: 24px; }
+
+.tech-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+}
+.tech-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

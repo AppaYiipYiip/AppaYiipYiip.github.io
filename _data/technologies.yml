@@ -1,0 +1,16 @@
+# Technology showcase shown on the homepage. Add a group any time; each
+# needs a name, a short description, and an inline SVG icon.
+- name: Business Intelligence
+  description: Power BI (Desktop, Service), DAX, Power Query (M), star-schema data modeling, and dashboard design.
+  icon: |
+    <svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="10" width="4" height="11" rx="1"/><rect x="10" y="5" width="4" height="16" rx="1"/><rect x="17" y="13" width="4" height="8" rx="1"/></svg>
+
+- name: Data & Databases
+  description: SQL, relational modeling, normalization (3NF), CTEs and window functions, plus Python (pandas, NumPy).
+  icon: |
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+
+- name: Tools & Workflow
+  description: Advanced Excel and Git, keeping analysis reproducible and version-controlled.
+  icon: |
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
