@@ -419,6 +419,16 @@ a { color: var(--accent); }
   border-top: 1px solid var(--border);
 }
 
+.build-marker {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.65rem;
+  font-family: monospace;
+  color: var(--border);
+  text-decoration: none;
+}
+.build-marker:hover { color: var(--muted); }
+
 .about-links { margin-top: 1.5rem; }
 
 .about-layout {
